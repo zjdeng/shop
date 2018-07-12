@@ -26,7 +26,7 @@
     margin-bottom: 10px;
 }
 .dm-left > .dm-picList > img.active {
-    border: solid 1px #F077AD;
+    border: solid 2px #F077AD;
 }
 /* 商品详情-右 */
 .dm-right {
