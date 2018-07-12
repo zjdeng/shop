@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>shop</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/order.css">
+</head>
+<body>
+    <div class="breadcrumbBox">
+      <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li class="active">订单管理</li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="orderNav container">
+        <ul>
+            <li class="active"><span>待付款</span></li>
+            <li><span>已付款</span></li>
+            <li><span>待收货</span></li>
+        </ul>
+    </div>
+
+    <div class="orderList-content container">
+        <!-- 待付款 -->
+        <div class="orderList orderList-noPay">
+            <table class="orderTable orderTable1">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <span>下单时间：2018年7月10日22:46:41</span>
+                            <span>订单编号：233333333</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="orderTable-td1">
+                            <input type="checkbox">
+                            <span class="orderTable-checkbox">
+                                <i></i>
+                            </span>
+                            <img src="" alt="tu">
+                            <span class="goodName">kjdhfjhadhfghs</span>
+                            <span class="num">x1</span>
+                        </td>
+                        <td class="orderTable-td2">
+                            <p>收货人：哈哈哈</p>
+                            <p>电话：3838339393</p>
+                            <p>地址：哈哈哈</p>
+                        </td>
+                        <td class="orderTable-td3">
+                            <span>¥43.00</span>
+                        </td>
+                        <td class="orderTable-td4">
+                            <input type="button" value="付款 42.34">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 底部结算条 -->
+            <div class="orderList-footer-bar">
+                <span class="orderTable-checkbox"></span>
+                <span class="select">全选</span>
+                <a class="del" href="#">删除</a>
+                <div>
+                    <span>已选商品<span>0</span>件</span>
+                    <span>合计：<span>100.00</span></span>
+                    <input type="button" value="结算">
+                </div>
+            </div>
+        </div>
+        
+        <!-- 已付款 -->
+        <div class="orderList orderList-paid">
+            <table class="orderTable orderTable1">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <span>下单时间：2018年7月10日22:46:41</span>
+                            <span>订单编号：233333333</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="orderTable-td1">
+                            <img src="" alt="tu">
+                            <span class="goodName">kjdhfjhadhfghs</span>
+                            <span class="num">x1</span>
+                        </td>
+                        <td class="orderTable-td2">
+                            <p>收货人：哈哈哈</p>
+                            <p>电话：3838339393</p>
+                            <p>地址：哈哈哈</p>
+                        </td>
+                        <td class="orderTable-td3">
+                            <span>¥43.00</span>
+                        </td>
+                        <td class="orderTable-td4">
+                            <span>尚未发货</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="orderTable-td1">
+                            <img src="" alt="tu">
+                            <span class="goodName">kjdhfjhadhfghs</span>
+                            <span class="num">x1</span>
+                        </td>
+                        <td class="orderTable-td2">
+                            <p>收货人：哈哈哈</p>
+                            <p>电话：3838339393</p>
+                            <p>地址：哈哈哈</p>
+                        </td>
+                        <td class="orderTable-td3">
+                            <span>¥43.00</span>
+                        </td>
+                        <td class="orderTable-td4">
+                            <span class="shipped">已发货</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 待收货 -->
+        <div class="orderList orderList-receive">
+            <table class="orderTable orderTable1">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <span>下单时间：2018年7月10日22:46:41</span>
+                            <span>订单编号：233333333</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="orderTable-td1">
+                            <input type="checkbox">
+                            <span class="orderTable-checkbox">
+                                <i></i>
+                            </span>
+                            <img src="" alt="tu">
+                            <span class="goodName">kjdhfjhadhfghs</span>
+                            <span class="num">x1</span>
+                        </td>
+                        <td class="orderTable-td2">
+                            <p>收货人：哈哈哈</p>
+                            <p>电话：3838339393</p>
+                            <p>地址：哈哈哈</p>
+                        </td>
+                        <td class="orderTable-td3">
+                            <span>¥43.00</span>
+                        </td>
+                        <td class="orderTable-td4">
+                            <input type="button" value="确认收货">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 底部结算条 -->
+            <div class="orderList-footer-bar">
+                <span class="orderTable-checkbox"></span>
+                <span class="select">全选</span>
+                <a class="del" href="#">删除</a>
+                <div>
+                    <input type="button" value="确认">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -15,6 +15,9 @@ html, body {
     display: table;
     clear: both;
 }
+ul > li {
+    list-style: none;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -22,13 +25,16 @@ input::-webkit-inner-spin-button {
 input[type="number"]{
     -moz-appearance: textfield;
 }
+input:focus {
+    outline: none;
+}
 /* 顶部导航 */
 .nav {
     background-color: #333;
     height: 36px;
 }
 .navbar {
-    display: inline-block;
+    display: block;
     float: right;
     height: 36px;
 }
@@ -40,7 +46,6 @@ input[type="number"]{
 .navbar ul li {
     color: #fff;
     float: left;
-    list-style: none;
     line-height: 14px;
     font-size: 12px;
 }
@@ -128,9 +133,186 @@ input[type="number"]{
     vertical-align: 2px;
     margin-right: 3px;
 }
+
 /*分页*/
 .paginationBox {
     clear: both;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/* 商品数量加减 */
+.goodsNumOperation {
+    display: inline-block;
+    height: 32px;
+}
+.goodsNumOperation > span {
+    border: solid 1px #DDD;
+    color: #DDD;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-left: -1px;
+}
+.goodsNumOperation > input {
+    border: solid 1px #DDD;
+    color: #DDD;
+    height: 32px;
+    width: 50px;
+    float: left;
+    padding-left: 5px;
+    margin-left: -1px;
+}
+.goodsNumOperation> input:focus {
+    outline: none;
+}
+
+/* 多选框 */
+.orderTable-checkbox {
+    background-color: #fff;
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+/* 订单列表table */
+.orderTable {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+/* table头 */
+.orderTable thead {
+    background-color: #F5F5F5;
+    border: solid 1px #E8E8E8;
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+}
+.orderTable thead tr {
+    height: 44px;
+}
+.orderTable thead tr th span:first-child {
+    margin-left: 10px;
+    margin-right: 70px;
+}
+/* table主体 */
+.orderTable tbody tr {
+    height: 142px;
+}
+.orderTable tbody tr td {
+    border: solid 1px #E8E8E8;
+}
+.orderTable-td1 {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.orderTable-td1 > input {
+    display: none;
+}
+.orderTable-td1 > .orderTable-checkbox {
+    vertical-align: -41px;
+}
+.orderTable-td1 > img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.orderTable-td1 > span.goodName {
+    display: inline-block;
+    vertical-align: -38px;
+    width: 255px;
+    white-space: normal;
+    word-break: break-all;
+}
+.orderTable-td1 > span.num {
+    float: right;
+    margin-right: 37px;
+    margin-top: 38px;
+}
+.orderTable-td2 {
+    font-size: 14px;
+    width: 328px;
+    text-align: center;
+}
+.orderTable-td2 > p {
+    display: inline-block;
+    width: 223px;
+    line-height: 26px;
+    text-align: left;
+}
+.orderTable-td3 {
+    font-size: 16px;
+    width: 141px;
+    text-align: center;
+}
+.orderTable-td4 {
+    font-size: 12px;
+    width: 141px;
+    text-align: center;
+}
+.orderTable-td4 > input {
+    background-color: #F077AD;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    padding: 8px 20px;
+}
+.orderTable-td4 > span {
+    font-size: 12px;
+}
+.orderTable-td4 > span.shipped {
+    color: #F077AD;
+}
+
+/* 底部结算条 */
+.orderList-footer-bar {
+    background-color: #E5E5E5;
+    color: #333;
+    font-size: 12px;
+    height: 44px;
+    padding-left: 10px;
+    margin-bottom: 100px;
+}
+.orderList-footer-bar > .orderTable-checkbox {
+    margin-top: 15px;
+}
+.orderList-footer-bar > .select {
+    margin-right: 25px;
+    vertical-align: 2px;
+}
+.orderList-footer-bar > .del {
+    vertical-align: 2px;
+    text-decoration: none;
+}
+.orderList-footer-bar > div {
+    float: right;
+    height: 100%;
+}
+.orderList-footer-bar > div > span {
+    float: left;
+    margin-right: 54px;
+    margin-top: 10px;
+}
+.orderList-footer-bar > div > span > span {
+    color: #FF4400;
+    font-size: 18px;
+    vertical-align: -2px;
+}
+.orderList-footer-bar > div > input {
+    background-color: #F077AD;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    height: 100%;
+    width: 80px;
 }

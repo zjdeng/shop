@@ -83,34 +83,6 @@
 .dm-num > .dm-attrName {
     vertical-align: 12px;
 }
-.dm-num > div {
-    display: inline-block;
-    height: 32px;
-}
-.dm-num > div > span {
-    border: solid 1px #DDD;
-    color: #DDD;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    line-height: 28px;
-    height: 32px;
-    width: 32px;
-    float: left;
-    margin-left: -1px;
-}
-.dm-num > div > input {
-    border: solid 1px #DDD;
-    color: #DDD;
-    height: 32px;
-    width: 50px;
-    float: left;
-    padding-left: 5px;
-    margin-left: -1px;
-}
-.dm-num > div > input:focus {
-    outline: none;
-}
 /* 按钮 */
 .dm-btn {
     padding-left: 10px;

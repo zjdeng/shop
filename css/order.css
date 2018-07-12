@@ -1,0 +1,26 @@
+.orderNav {
+    border-bottom: solid 2px #EAEAEA;
+    height: 35px;
+    margin-bottom: 20px;
+}
+.orderNav > ul {
+    height: 100%;
+}
+.orderNav > ul > li {
+    color: #333;
+    font-size: 18px;
+    height: 35px;
+    float: left;
+}
+.orderNav > ul > li > span {
+    height: 18px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+.orderNav > ul > li:not(:last-child) > span {
+    border-right: solid 1px #EAEAEA;
+}
+.orderNav > ul > li.active {
+    border-bottom: solid;
+    color: #F077AD;
+}
