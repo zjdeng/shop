@@ -8,62 +8,104 @@
   <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
 <body>
-    <div class="breadcrumbBox">
-      <div class="container">
-          <ol class="breadcrumb">
-            <li><a href="#">首页</a></li>
-            <li class="active">购物车</li>
-          </ol>
-      </div>
-    </div>
+	<div class="shoppingTop">
+		<div class="nav">
+			<div class="container">
+				<div class=navbar>
+					<ul>
+						<li>
+							<img src="img/icon-app.png" alt="photo">
+							<span>1989132</span>
+						</li>
+						<li>
+							<a href="order.html">我的订单</a>
+						</li>
+						<li>
+							<a href="shoppingCart.html">购物车</a>
+						</li>
+						<li>
+							<a href="">
+								<i></i>
+								<span>APP</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="header">
+			<div class="container">
+				<div class="header-left"></div>
+				<div class="header-right">
+					<div class="header-search">
+						<i></i>
+						<input type="text" placeholder="请搜索商品">
+					</div>
+					<i class="icon-shoppingCart"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="cartList container">
-            <table class="orderTable orderTable1">
-                <thead>
-                    <tr>
-                        <th colspan="4">
-                            <span>下单时间：2018年7月10日22:46:41</span>
-                            <span>订单编号：233333333</span>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="orderTable-td1">
-                            <input type="checkbox">
-                            <span class="orderTable-checkbox">
-                                <i></i>
-                            </span>
-                            <img src="" alt="tu">
-                            <span class="goodName">kjdhfjhadhfghs</span>
-                        </td>
-                        <td class="orderTable-td2">
-                            <div class="goodsNumOperation">
-                                <span>-</span>
-                                <input type="number" value="1">
-                                <span>+</span>
-                            </div>
-                        </td>
-                        <td class="orderTable-td3">
-                            <span>¥43.00</span>
-                        </td>
-                        <td class="orderTable-td4">
-                            <input type="button" value="移除购物车">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- 底部结算条 -->
-            <div class="orderList-footer-bar">
-                <span class="orderTable-checkbox"></span>
-                <span class="select">全选</span>
-                <a class="del" href="#">删除</a>
-                <div>
-                    <span>已选商品<span>0</span>件</span>
-                    <span>合计：<span>100.00</span></span>
-                    <input type="button" value="结算">
-                </div>
-            </div>
-    </div>
+	<div class="breadcrumbBox">
+	  <div class="container">
+		  <ol class="breadcrumb">
+			<li><a href="index.html">首页</a></li>
+			<li class="active">购物车</li>
+		  </ol>
+	  </div>
+	</div>
+
+	<div class="cartList container">
+			<table class="orderTable orderTable1">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<span>下单时间：2018年7月10日22:46:41</span>
+							<span>订单编号：233333333</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="orderTable-td1">
+							<input type="checkbox">
+							<span class="orderTable-checkbox">
+								<i></i>
+							</span>
+							<img src="" alt="tu">
+							<span class="goodName">kjdhfjhadhfghs</span>
+						</td>
+						<td class="orderTable-td2">
+							<div class="goodsNumOperation">
+								<span>-</span>
+								<input type="number" value="1">
+								<span>+</span>
+							</div>
+						</td>
+						<td class="orderTable-td3">
+							<span>¥43.00</span>
+						</td>
+						<td class="orderTable-td4">
+							<input type="button" value="移除购物车">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- 底部结算条 -->
+			<div class="orderList-footer-bar">
+				<span class="orderTable-checkbox"></span>
+				<span class="select">全选</span>
+				<a class="del" href="#">删除</a>
+				<div>
+					<span>已选商品<span>0</span>件</span>
+					<span>合计：<span>100.00</span></span>
+					<input type="button" value="结算">
+				</div>
+			</div>
+	</div>
+
+	<div class="footer"></div>
 </body>
 </html>

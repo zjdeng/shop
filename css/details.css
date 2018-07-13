@@ -121,4 +121,18 @@
     height: 44px;
     line-height: 42px;
     padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* 图文详情 */
+.details-graphic-content {
+    background: url("../img/details-pic1.png");
+    height: 3254px;
+    width: 1090px;
+}
+/* 产品参数 */
+.details-parameters-content {
+    background: url("../img/details-pic2.png");
+    height: 1014px;
+    width: 1090px;
 }

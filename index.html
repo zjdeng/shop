@@ -9,68 +9,85 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-  <div class="nav">
-    <div class="container">
-        <div class=navbar>
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                        <span>1989132</span>
-                    </li>
-                    <li>
-                        <a href="">我的订单</a>
-                    </li>
-                    <li>
-                        <a href="">购物车</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i></i>
-                            <span>APP</span>
-                        </a>
-                    </li>
-                </ul>
-        </div>
-    </div>
-  </div>
-
-  <div class="header">
-    <div class="container">
-        <div class="header-left"></div>
-        <div class="header-right">
-            <div class="header-search">
-                <i></i>
-                <input type="text" placeholder="请搜索商品">
+    <div class="shoppingTop">
+        <div class="nav">
+            <div class="container">
+                <div class=navbar>
+                    <ul>
+                        <li>
+                            <img src="img/icon-app.png" alt="photo">
+                            <span>1989132</span>
+                        </li>
+                        <li>
+                            <a href="order.html">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="shoppingCart.html">购物车</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i></i>
+                                <span>APP</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <i class="icon-shoppingCart"></i>
+        </div>
+        
+        <div class="header">
+            <div class="container">
+                <div class="header-left"></div>
+                <div class="header-right">
+                    <div class="header-search">
+                        <i></i>
+                        <input type="text" placeholder="请搜索商品">
+                    </div>
+                    <i class="icon-shoppingCart"></i>
+                </div>
+            </div>
         </div>
     </div>
-  </div>
+  
+    <div class="banner"></div>
 
-  <div class="banner"></div>
+    <div class="goodsList">
+        <div class="container">
+            <div class="listTitle"></div>
+            <div class="goodsBox clearfix">
+                <div class="goodsItem">
+                    <a href="">
+                        <img src="img/goodsPic.png" alt="">
+                        <div>
+                            <p class="goodsName" title="男士双肩包">男士双肩包</p>
+                            <p class="goodsPrice">¥1200</p>
+                            <p class="goodsSales">月销1200笔</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="pageTurn" class="paginationBox"></div>
+        </div>
+    </div>
 
-  <div class="goodsList">
-      <div class="container">
-          <div class="listTitle"></div>
-          <div class="goodsBox clearfix">
-              <div class="goodsItem">
-                  <a href="">
-                      <img src="" alt="">
-                      <div>
-                        <p class="goodsName" title="男士双肩包">男士双肩包</p>
-                        <p class="goodsPrice">¥1200</p>
-                        <p class="goodsSales">月销1200笔</p>
-                    </div>
-                  </a>
-              </div>
-          </div>
-          <div id="pageTurn" class="paginationBox"></div>
-      </div>
-  </div>
+    <div class="footer"></div>
 
-  <div class="footer">
-
-  </div>
+    <div class="shoppingModel" style="display: none;">
+        <div class="shoppingModel-body loginBox">
+            <i class="icon-close"></i>
+            <p class="title">登录</p>
+            <div class="userBox">
+                <i class="icon-user"></i>
+                <input type="text" placeholder="请输入手机号">
+            </div>
+            <div class="pwdBox">
+                <i class="icon-pwd"></i>
+                <input type="text" placeholder="请输入密码">
+            </div>
+            <p class="error">错误提示</p>
+            <input class="loginBtn" type="button" value="登录">
+        </div>
+    </div>
 
   <script src="js/jquery-1.10.2.min.js"></script>
   <script src="js/common.js"></script>

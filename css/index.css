@@ -1,6 +1,6 @@
 /* 首页 */
 .banner {
-    background: url("../img/title.png");
+    background: url("../img/banner.png");
     background-size: 100% 100%;
     width: 100%;
     height: 420px;
@@ -19,17 +19,18 @@
 }
 .goodsItem {
     width: 265px;
-    border: solid 1px #333;
+    /* border: solid 1px #333; */
     margin: 5px;
     float: left;
 }
 .goodsItem > a {
     text-decoration: none;
+    display: inline-block;
 }
 .goodsItem > a > img {
     display: inline-block;
     height: 265px;
-    width: 265px;
+    width: 100%;
 }
 .goodsItem > a > div > p {
     text-align: center;

@@ -6,6 +6,9 @@
 html, body {
     height: 100%;
 }
+body {
+    padding-top: 116px;
+}
 .container {
     width: 1090px;
     margin: 0 auto;
@@ -28,6 +31,15 @@ input[type="number"]{
 input:focus {
     outline: none;
 }
+input[type="button"] {
+    cursor: pointer;
+}
+.shoppingTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 /* 顶部导航 */
 .nav {
     background-color: #333;
@@ -49,6 +61,13 @@ input:focus {
     line-height: 14px;
     font-size: 12px;
 }
+.navbar ul li:first-child img {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
 .navbar ul li:last-child {
     padding-left: 25px;
 }
@@ -60,15 +79,25 @@ input:focus {
     color: #fff;
     text-decoration: none;
 }
+.navbar ul li:last-child a i {
+    background: url("../img/icon-app.png");
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    vertical-align: -2px;
+}
 /* 头部 */
 .header {
+    background-color: #fff;
     height: 80px;
     padding-top: 20px;
     box-shadow:0px 0px 10px rgba(140,140,140,0.3);
 }
 .header-left {
+    background: url(../img/logo.png);
     display: inline-block;
-    height: 100%;
+    height: 37px;
+    width: 285px;
 }
 .header-right {
     float: right;
@@ -79,13 +108,13 @@ input:focus {
     position: relative;
 }
 .header-search > i {
+    background: url("../img/icon-search.png");
     display: inline-block;
     width: 17px;
     height: 18px;
     position: absolute;
     top: 12px;
     left: 14px;
-    background-color: black;
 }
 .header-search > input {
     width:279px;
@@ -101,7 +130,7 @@ input:focus {
     display: inline-block;
     width:40px;
     height:40px;
-    background:rgba(239,239,239,0.8);
+    background: url("../img/icon-shoppingCart.png");
     vertical-align: -15px;
 }
 /* 底部 */
@@ -219,25 +248,26 @@ input:focus {
     display: none;
 }
 .orderTable-td1 > .orderTable-checkbox {
-    vertical-align: -41px;
+    float: left;
+    margin-top: 45px;
 }
 .orderTable-td1 > img {
-    display: inline-block;
+    float: left;
     height: 100px;
     width: 100px;
     margin-right: 10px;
 }
 .orderTable-td1 > span.goodName {
-    display: inline-block;
-    vertical-align: -38px;
     width: 255px;
     white-space: normal;
     word-break: break-all;
+    float: left;
+    margin-top: 40px;
 }
 .orderTable-td1 > span.num {
     float: right;
     margin-right: 37px;
-    margin-top: 38px;
+    margin-top: 40px;
 }
 .orderTable-td2 {
     font-size: 14px;
@@ -315,4 +345,93 @@ input:focus {
     font-size: 18px;
     height: 100%;
     width: 80px;
+}
+
+/* 模态框 */
+.shoppingModel {
+    background:rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.shoppingModel-body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.loginBox {
+    background-color: #fff;
+    width: 386px;
+    height: 316px;
+    padding-top: 40px;
+}
+.loginBox > .icon-close {
+    background: url("../img/icon-close.png");
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    top: 42px;
+    right: 30px;
+}
+.loginBox > p.title {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.loginBox > div {
+    border: solid 1px #E8E8E8;
+    width: 302px;
+    height: 38px;
+    margin: 0 auto;
+}
+.loginBox > div.userBox {
+    margin-bottom: 15px;
+}
+.loginBox > div i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 10px 9px;
+}
+.icon-user {
+    background: url("../img/icon-user.png");
+}
+.icon-pwd {
+    background: url("../img/icon-pwd.png");
+}
+.loginBox > div > input {
+    border: none;
+    border-left: solid 1px #E8E8E8;
+    font-size: 12px;
+    width: 260px;
+    height: 24px;
+    padding-left: 10px;
+    float: right;
+    margin-top: 7px;
+}
+.loginBox > .error {
+    color: red;
+    font-size: 12px;
+    margin-left: 42px;
+    margin-top: 8px;
+}
+.loginBox > .loginBtn {
+    background-color: #F077AD;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 5px;
+    width: 302px;
+    height: 48px;
+    position: absolute;
+    bottom: 40px;
+    left: 42px;
 }
