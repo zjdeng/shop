@@ -48,73 +48,122 @@
             </div>
         </div>
     </div>
-    
+
     <div class="addressInfo container">
-      <p class="addressInfo-title">收货信息</p>
-      <!-- 默认地址 -->
-      <div class="addressInfo-default">
-        <div class="info-left">
-            <div>
-                <i></i>
-                <span>默认地址</span>
-                <input type="button" value="修改">
-            </div>
-            <p><span>收货人：</span><span>哈哈哈</span></p>
-            <p><span>联系方式：</span><span>哈哈哈</span></p>
-            <p><span>收货地址：</span><span>哈哈哈</span></p>
-        </div>
-        <div class="info-divider"></div>
-        <div class="info-right">
-            <p href="">切换地址</p>
-            <input type="button" value="新增地址">
-        </div>
-      </div>
+		<p class="addressInfo-title">收货信息</p>
+		<!-- 默认地址 -->
+		<div class="addressInfo-default">
+			<div class="info-left">
+				<div>
+					<i></i>
+					<span>默认地址</span>
+					<input type="button" value="修改">
+				</div>
+				<p><span>收货人：</span><span>哈哈哈</span></p>
+				<p><span>联系方式：</span><span>哈哈哈</span></p>
+				<p><span>收货地址：</span><span>哈哈哈</span></p>
+			</div>
+			<div class="info-divider"></div>
+			<div class="info-right">
+				<p href="">切换地址</p>
+				<input type="button" value="新增地址">
+			</div>
+      	</div>
 
-      <!-- 修改地址 -->
-      <div>
+		<!-- 修改地址 -->
+		<div class="addressInfo-modify">
+			<div class="info-left">
+				<!-- 地区 -->
+				<div class="region">
+					<span class="attrName">所在地区</span>
 
-      </div>
+					<div class="selectBox">
+						<span>请选择</span>
+						<i></i>
+						<ul class="">
+							<li>hehe</li>
+							<li>hehe</li>
+						</ul>
+					</div>
+
+					<div class="selectBox">
+						<span>请选择</span>
+						<i></i>
+						<ul class="">
+							<li>hehe</li>
+							<li>hehe</li>
+						</ul>
+					</div>
+
+					<div class="selectBox">
+						<span>请选择</span>
+						<i></i>
+						<ul class="">
+							<li>hehe</li>
+							<li>hehe</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 详细地址 -->
+				<div class="site">
+					<span class="attrName">详细地址</span>
+					<textarea name="" id="" cols="30" rows="10" placeholder="详细地址、街道、门牌号等"></textarea>
+				</div>
+				<!-- 收货人 -->
+				<div class="Consignee">
+					<div>
+						<span class="attrName">收货人</span>
+						<input type="text">
+					</div>
+					<div>
+						<span class="attrName">手机号码</span>
+						<input type="text">
+					</div>
+				</div>
+			</div>
+			<div class="info-divider"></div>
+			<div class="info-right">
+				<div class="toDefault">
+					<span class="orderTable-checkbox">
+						<i></i>
+					</span>
+					<span class="text">设为默认</span>
+				</div>
+				<div class="addressBtn">
+					<input class="addressBtn-cancel" type="button" value="取消">
+					<input class="addressBtn-confirm" type="button" value="保存地址">
+				</div>
+			</div>
+		</div>
     </div>
 
     <div class="cartList container">
-        <table class="orderTable orderTable1">
+        <table class="orderTable">
             <thead>
                 <tr>
-                    <th colspan="4">
-                        <span>下单时间：2018年7月10日22:46:41</span>
-                        <span>订单编号：233333333</span>
+                    <th colspan="3">
+                        <span>商品信息</span>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="orderTable-td1">
-                        <input type="checkbox">
-                        <span class="orderTable-checkbox">
-                            <i></i>
-                        </span>
                         <img src="img/goodsPic.png" alt="tu">
                         <span class="goodName">kjdhfjhadhfghs</span>
                     </td>
-                    <td class="orderTable-td2">
-                        <div class="goodsNumOperation">
-                            <span>-</span>
-                            <input type="number" value="1">
-                            <span>+</span>
-                        </div>
+                    <td class="orderTable-td3">
+                        <span>1</span>
                     </td>
                     <td class="orderTable-td3">
                         <span>¥43.00</span>
-                    </td>
-                    <td class="orderTable-td4">
-                        <input type="button" value="移除购物车">
                     </td>
                 </tr>
             </tbody>
         </table>
         <!-- 底部结算条 -->
         <div class="orderList-footer-bar">
-            <span class="orderTable-checkbox"></span>
+            <span class="orderTable-checkbox"><i></i></span>
             <span class="select">全选</span>
             <a class="del" href="#">删除</a>
             <div>
