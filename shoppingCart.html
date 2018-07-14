@@ -23,11 +23,12 @@
 						<li>
 							<a href="shoppingCart.html">购物车</a>
 						</li>
-						<li>
+						<li class="APPDown">
 							<a href="">
 								<i></i>
 								<span>APP</span>
 							</a>
+							<img class="QrCode" src="img/goodsPic.png" alt="">
 						</li>
 					</ul>
 				</div>
@@ -42,7 +43,7 @@
 						<i></i>
 						<input type="text" placeholder="请搜索商品">
 					</div>
-					<i class="icon-shoppingCart"></i>
+					<a class="icon-shoppingCart" href="shoppingCart.html"></a>
 				</div>
 			</div>
 		</div>
@@ -70,8 +71,8 @@
 				<tbody>
 					<tr>
 						<td class="orderTable-td1">
-							<input type="checkbox">
 							<span class="orderTable-checkbox">
+								<input type="checkbox">
 								<i></i>
 							</span>
 							<img src="img/goodsPic.png" alt="tu">
@@ -95,7 +96,10 @@
 			</table>
 			<!-- 底部结算条 -->
 			<div class="orderList-footer-bar">
-				<span class="orderTable-checkbox"><i></i></span>
+				<span class="orderTable-checkbox selectAll">
+					<input type="checkbox">
+					<i></i>
+				</span>
 				<span class="select">全选</span>
 				<a class="del" href="#">删除</a>
 				<div>
@@ -107,5 +111,8 @@
 	</div>
 
 	<div class="footer"></div>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/order.js"></script>
 </body>
 </html>

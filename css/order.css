@@ -8,6 +8,7 @@
 }
 .orderNav > ul > li {
     color: #333;
+    cursor: pointer;
     font-size: 18px;
     height: 35px;
     float: left;

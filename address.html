@@ -11,28 +11,29 @@
 <body style="overflow: auto;">
     <div class="shoppingTop">
         <div class="nav">
-                <div class="container">
-                    <div class=navbar>
-                            <ul>
-                                <li>
-                                    <img src="img/icon-app.png" alt="photo">
-                                    <span>1989132</span>
-                                </li>
-                                <li>
-                                    <a href="order.html">我的订单</a>
-                                </li>
-                                <li>
-                                    <a href="shoppingCart.html">购物车</a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i></i>
-                                        <span>APP</span>
-                                    </a>
-                                </li>
-                            </ul>
-                    </div>
+            <div class="container">
+                <div class=navbar>
+                    <ul>
+                        <li>
+                            <img src="img/icon-app.png" alt="photo">
+                            <span>1989132</span>
+                        </li>
+                        <li>
+                            <a href="order.html">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="shoppingCart.html">购物车</a>
+                        </li>
+                        <li class="APPDown">
+                            <a href="">
+                                <i></i>
+                                <span>APP</span>
+                            </a>
+                            <img class="QrCode" src="img/goodsPic.png" alt="">
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </div>
         
         <div class="header">
@@ -43,7 +44,7 @@
                         <i></i>
                         <input type="text" placeholder="请搜索商品">
                     </div>
-                    <i class="icon-shoppingCart"></i>
+                    <a class="icon-shoppingCart" href="shoppingCart.html"></a>
                 </div>
             </div>
         </div>
@@ -67,7 +68,7 @@
 			</div>
 			<div class="info-divider"></div>
 			<div class="info-right">
-				<p href="">切换地址</p>
+				<p>切换地址</p>
 				<input type="button" value="新增地址">
 			</div>
       	</div>
@@ -81,7 +82,7 @@
 
 					<div class="selectBox">
 						<span>请选择</span>
-						<i></i>
+						<i></i>
 						<ul class="">
 							<li>hehe</li>
 							<li>hehe</li>
@@ -90,7 +91,7 @@
 
 					<div class="selectBox">
 						<span>请选择</span>
-						<i></i>
+						<i></i>
 						<ul class="">
 							<li>hehe</li>
 							<li>hehe</li>
@@ -99,7 +100,7 @@
 
 					<div class="selectBox">
 						<span>请选择</span>
-						<i></i>
+						<i></i>
 						<ul class="">
 							<li>hehe</li>
 							<li>hehe</li>
@@ -165,9 +166,6 @@
         </table>
         <!-- 底部结算条 -->
         <div class="orderList-footer-bar">
-            <span class="orderTable-checkbox"><i></i></span>
-            <span class="select">全选</span>
-            <a class="del" href="#">删除</a>
             <div>
                 <span>已选商品<span>0</span>件</span>
                 <span>合计：<span>100.00</span></span>
@@ -229,6 +227,7 @@
         </div>
     </div>
 
-
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/address.js"></script>
 </body>
 </html>

@@ -80,6 +80,7 @@
 }
 .addressInfo-default .info-right > p {
     color: #6699CC;
+    cursor: pointer;
     font-size: 12px;
     margin-bottom: 10px;
 }
@@ -143,6 +144,7 @@
     top: 11px;
 }
 .addressInfo-modify .selectBox > ul {
+    background-color: #fff;
     border: solid 1px #DDD;
     width: 170px;
     margin-left: -1px;
@@ -222,6 +224,7 @@
     color: #fff;
 }
 
+/* 模态框 */
 .addressSelectModel {
     width: 660px;
     height: 610px;
@@ -244,6 +247,9 @@
     position: relative;
     padding: 20px 70px 20px 20px;
     margin-bottom: 10px;
+}
+.addressSelectModel .addressInfo-table > p > span:last-child {
+    width: 350px;
 }
 .addressItem > i.triangle-selected {
     background: url("../img/triangle-selected.png");

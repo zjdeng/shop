@@ -24,7 +24,8 @@ var indexData = {
     getList: function () {
         var total = 81;
         this.pageTurn(total);
-    }
+    },
+    
 };
 $(function () {
     indexData.getList();
