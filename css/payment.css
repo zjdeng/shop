@@ -1,0 +1,79 @@
+.payment {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.payment-header {
+    margin-bottom: 20px;
+}
+.payment-header > p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.payment-num{
+    color: #666;
+    font-size: 16px;
+}
+.payment-price {
+    color: #333;
+    font-size: 12px;
+    float: right;
+}
+.payment-price > span {
+    color: #FF4400;
+    font-size: 18px;
+    vertical-align: -2px;
+}
+
+.payment-body {
+    border: solid 1px #E8E8E8;
+    margin-bottom: 40px;
+}
+.payment-body > .title {
+    background:rgba(245,245,245,1);
+    border-bottom: solid 1px #E8E8E8;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 20px;
+}
+.payment-body > .payment-content {
+    padding: 40px;
+}
+.payment-content > div {
+    float: left;
+    margin-right: 35px;
+}
+.payment-content > div > i {
+    display: inline-block;
+}
+.payment-content > div > i:first-child {
+    vertical-align: 14px;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+.payment-content > div > i.icon-radio {
+    background: url("../img/icon-radio.png");
+}
+.payment-content > div > i.Pay-treasure {
+    background: url("../img/Pay-treasure.png");
+    height: 47px;
+    width: 140px;
+}
+.payment-content > div > i.Pay-WeChat {
+    background: url("../img/Pay-WeChat.png");
+    height: 47px;
+    width: 140px;
+}
+
+.paymentBtn {
+    background-color:#F077AD;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    width: 168px;
+    float: right;
+}

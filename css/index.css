@@ -5,6 +5,24 @@
     width: 100%;
     height: 420px;
 }
+.banner > .bannerBox {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 135px;
+    padding-left: 110px;
+}
+.bannerBox > .banner-num {
+    margin-bottom: 20px;
+}
+.bannerBox > .banner-num > span {
+    background: url("../img/banner-num-bg.png");
+    display: inline-block;
+    width: 44px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
 
 .listTitle {
     background: url("../img/title.png");
