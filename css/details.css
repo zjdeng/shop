@@ -128,13 +128,27 @@
 
 /* 图文详情 */
 .details-graphic-content {
-    background: url("../img/details-pic1.png");
-    height: 3254px;
-    width: 1090px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.details-graphic-content > img {
+    display: block;
+    width: 100%;
+    /* height: 300px; */
+}
+.details-graphic-content > img:not(:last-child) {
+    margin-bottom: 10px;
 }
 /* 产品参数 */
 .details-parameters-content {
-    background: url("../img/details-pic2.png");
-    height: 1014px;
-    width: 1090px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.details-parameters-content > img {
+    display: block;
+    width: 100%;
+    /* height: 300px; */
+}
+.details-graphic-content > img:not(:last-child) {
+    margin-bottom: 10px;
 }
