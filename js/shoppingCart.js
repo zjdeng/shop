@@ -3,7 +3,7 @@ var cartDate =  {
         // 判断是否全部选中
         var isSelectAll = function () {
             var allNum = $('.selectSingle').length;
-            var selectNum = $('.selectSingle > input[type="checkbox"]:checked').length;
+            var selectNum = $('.selectSingle > input[type="checkbox"][checked]').length;
             if (allNum == selectNum) {
                 $('.selectAll').children('i').show();
                 $('.selectAll').children('input[type="checkbox"]').attr("checked", true);
