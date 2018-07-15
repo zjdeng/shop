@@ -62,10 +62,10 @@
     <div class="details-content container">
         <div class="details-main">
           <div class="dm-left">
-            <img class="dm-pic" src="img/goodsPic.png" alt="tu">
+            <img class="dm-pic" src="" alt="tu">
             <div class="dm-picList">
-              <img src="img/goodsPic.png" alt="tu">
               <img src="img/goodsPic.png" alt="tu" class="active">
+              <img src="img/goodsPic.png" alt="tu">
               <img src="img/goodsPic.png" alt="tu">
               <img src="img/goodsPic.png" alt="tu">
               <img src="img/goodsPic.png" alt="tu">
@@ -90,7 +90,7 @@
               <span class="dm-attrName">数量</span>
               <div class="goodsNumOperation">
                 <span>-</span>
-                <input type="number" value="1">
+                <input type="number" value="1" min="1" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
                 <span>+</span>
               </div>
             </div>
@@ -119,5 +119,8 @@
     </div>
     
     <div class="footer"></div>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/details.js"></script>
 </body>
 </html>

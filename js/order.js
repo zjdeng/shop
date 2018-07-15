@@ -8,6 +8,19 @@ var orderDate =  {
             $('.orderList-content > .orderList[data-type="' + dataType +'"]').show();
             $('.orderList-content > .orderList[data-type="' + dataType +'"]').siblings().hide();
         });
+        // 判断是否全部选中
+        var isSelectAll = function (selectBoxName) {
+            var allNum = $('.selectSingle-' + selectBoxName).length;
+            var selectNum = $('.selectSingle-' + selectBoxName + ' > input[type="checkbox"][checked]').length;
+            console.log(allNum + '===' + selectNum);
+            if (allNum == selectNum) {
+                $('.orderList-' + selectBoxName + ' .selectAll').children('i').show();
+                $('.orderList-' + selectBoxName + ' .selectAll').children('input[type="checkbox"]').attr("checked", true);
+            } else {
+                $('.orderList-' + selectBoxName + ' .selectAll').children('i').hide();
+                $('.orderList-' + selectBoxName + ' .selectAll').children('input[type="checkbox"]').attr("checked", false);
+            }
+        }
         // 多选框点击效果
         $('.orderTable-checkbox').click(function () {
             if ($(this).children('i').is(":hidden")) {
@@ -16,6 +29,11 @@ var orderDate =  {
             } else {
                 $(this).children('i').hide();
                 $(this).children('input[type="checkbox"]').attr("checked", false);
+            }
+            if ($(this).hasClass('selectSingle-noPay')) {
+                isSelectAll('noPay');
+            } else if ($(this).hasClass('selectSingle-receive')) {
+                isSelectAll('receive');
             }
         });
         // 全选

@@ -256,6 +256,22 @@ input[type="button"] {
     margin-left: 10px;
     margin-right: 70px;
 }
+.orderTable2 thead tr th {
+    font-weight: normal;
+}
+.orderTable2 thead tr th:not(:first-child) {
+    text-align: center;
+}
+.orderTable2 thead tr th span {
+    float: left;
+    line-height: 14px;
+}
+.orderTable2 thead tr th:first-child span:first-child {
+    margin-right: 10px;
+}
+.orderTable2 thead tr th:first-child span:nth-child(2) {
+    margin-right: 150px;
+}
 /* table主体 */
 .orderTable tbody tr {
     height: 142px;
