@@ -57,6 +57,9 @@
 .payment-content > div > i.icon-radio {
     background: url("../img/icon-radio.png");
 }
+.payment-content > div > i.icon-radio-selected {
+    background: url("../img/icon-radio-selected.png");
+}
 .payment-content > div > i.Pay-treasure {
     background: url("../img/Pay-treasure.png");
     height: 47px;

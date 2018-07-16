@@ -50,6 +50,12 @@ var addressDate =  {
             }
             $event.stopPropagation();
         });
+
+        // 选择地址
+        $('.addressSelectModel > .addressList > .addressItem').click(function () {
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+        });
     }
 };
 $(function () {

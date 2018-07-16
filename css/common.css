@@ -82,7 +82,10 @@ input[type="button"] {
     color: #fff;
     text-decoration: none;
 }
-.navbar ul li:last-child a i {
+.navbar ul li:last-child span {
+    cursor: pointer;
+}
+.navbar ul li:last-child span i {
     background: url("../img/icon-app.png");
     display: inline-block;
     width: 7px;

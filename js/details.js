@@ -24,6 +24,10 @@ var detailsDate =  {
             $(this).siblings().removeClass('active');
             $('.details-main .dm-left .dm-pic').attr('src', src);
         });
+
+        $('.dn-addToCart').click(function () {
+            alert('添加成功！');
+        })
     }
 };
 $(function () {
