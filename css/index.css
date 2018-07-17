@@ -37,8 +37,7 @@
 }
 .goodsItem {
     width: 265px;
-    /* border: solid 1px #333; */
-    margin: 5px;
+    margin: 5px 5px 30px 5px;
     float: left;
 }
 .goodsItem > a {
@@ -55,6 +54,7 @@
     line-height: 24px;
 }
 .goodsItem > a  > div > p.goodsName {
+    font-weight: bolder;
     color: #333;
     font-size: 14px;
     white-space: nowrap;
@@ -62,8 +62,13 @@
     text-overflow: ellipsis;
 }
 .goodsItem > a  > div > p.goodsPrice {
+    border-bottom: solid 1px #E8E8E8;
+    font-weight: bold;
     color: #D4282D;
     font-size: 14px;
+    width: 129px;
+    margin: 2px auto;
+    padding-bottom: 5px;
 }
 .goodsItem > a  > div > p.goodsSales {
     color: #999;

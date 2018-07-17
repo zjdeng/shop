@@ -40,6 +40,7 @@
 .dm-title {
     color: #333;
     font-size: 20px;
+    font-weight: bolder;
     margin-bottom: 30px;
 }
 .dm-attrName {
@@ -58,6 +59,7 @@
 .dm-price-new {
     color: #FF4400;
     font-size: 18px;
+    font-weight: bolder;
     margin-right: 6px;
 }
 .dm-price-old {
@@ -120,6 +122,7 @@
     border: solid 1px #E8E8E8;
     color: #333;
     font-size: 18px;
+    font-weight: bolder;
     height: 44px;
     line-height: 42px;
     padding-left: 20px;

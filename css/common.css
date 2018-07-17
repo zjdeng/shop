@@ -193,7 +193,7 @@ input[type="button"] {
 }
 .goodsNumOperation > span {
     border: solid 1px #DDD;
-    color: #DDD;
+    color: #999;
     cursor: pointer;
     display: block;
     text-align: center;
@@ -205,7 +205,7 @@ input[type="button"] {
 }
 .goodsNumOperation > input {
     border: solid 1px #DDD;
-    color: #DDD;
+    color: #333;
     height: 32px;
     width: 50px;
     float: left;
@@ -367,7 +367,7 @@ input[type="button"] {
     text-decoration: none;
 }
 .orderList-footer-bar > a.del:focus,
-.orderList-footer-bar > a.del:visited, {
+.orderList-footer-bar > a.del:visited {
     color: #333;
 }
 .orderList-footer-bar > div {

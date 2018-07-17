@@ -20,7 +20,7 @@ var orderDate =  {
                 $('.orderList-' + selectBoxName + ' .selectAll').children('i').hide();
                 $('.orderList-' + selectBoxName + ' .selectAll').children('input[type="checkbox"]').attr("checked", false);
             }
-        }
+        };
         // 多选框点击效果
         $('.orderTable-checkbox').click(function () {
             if ($(this).children('i').is(":hidden")) {

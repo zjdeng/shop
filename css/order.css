@@ -25,3 +25,11 @@
     border-bottom: solid;
     color: #F077AD;
 }
+
+.orderList-noPay .orderTable thead tr th span:first-child {
+    margin-right: 10px;
+    vertical-align: -2px;
+}
+.orderList-noPay .orderTable thead tr th span:nth-child(2) {
+    margin-right: 70px;
+}
